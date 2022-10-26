@@ -2,49 +2,49 @@ package app.curso.banco.entidad;
 
 public class Persona {
 
-	protected Long id;
-	protected String name;
-	protected Integer age;
-	protected String phone;
+	protected int id;
+	protected String nombre;
+	protected String telefono;
 
-	Persona(Long id, String name, Integer age, String phone) {
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.phone = phone;
+	// constructor por defecto
+	public Persona() {
 	}
 
-	public Long getId() {
+	// constructor parametrizado
+	public Persona(int id, String nombre, String telefono) {
+		this.id = id;
+		this.nombre = nombre;
+		this.telefono = telefono;
+	}
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
-	public Integer getAge() {
-		return age;
+	public String getTelefono() {
+		return telefono;
 	}
 
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
 	}
 
-	public String getPhone() {
-		return phone;
+	public void mostrarInfo() {
+		System.out.println("Id: " + this.id);
+		System.out.println("Nombre: " + this.nombre);
+		System.out.println("Teléfono: " + this.telefono);
 	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	
 
 }

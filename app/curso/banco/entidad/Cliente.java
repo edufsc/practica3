@@ -2,8 +2,12 @@ package app.curso.banco.entidad;
 
 public class Cliente extends Persona {
 
-	public Cliente(Long id, String name, Integer age, String phone) {
-		super(id, name, age, phone);
+	public Cliente() {
+		
+	}
+
+	public Cliente(int id, String nombre, String telefono) {
+		super(id, nombre, telefono);
 	}
 
 }
